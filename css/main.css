@@ -192,6 +192,21 @@ body {
     .nav__item:hover {
       border-bottom: .5rem solid blue; }
 
+.footer {
+  border-top: 1px solid #686868;
+  background: #eee;
+  font-size: 1.5rem;
+  padding: 4rem 0; }
+  .footer__box {
+    max-width: 128rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left; }
+  .footer--grey {
+    color: #686868; }
+  .footer--blue {
+    color: #004ffa; }
+
 .hero {
   background: linear-gradient(rgba(11, 17, 27, 0.4), rgba(11, 17, 27, 0.4)), url(../img/hero.jpg);
   background-size: cover;

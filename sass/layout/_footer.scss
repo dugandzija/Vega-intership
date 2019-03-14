@@ -1,0 +1,18 @@
+.footer{
+    border-top: 1px solid $color-grey;
+    background: $color-grey-light;
+    font-size: 1.5rem;
+    padding: 4rem 0;
+    &__box{
+        max-width: 128rem;
+        width:100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    &--grey{
+        color: $color-grey;
+    }
+    &--blue{
+        color: $color-blue;
+    }
+}
