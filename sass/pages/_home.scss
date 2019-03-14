@@ -1,0 +1,29 @@
+.hero{
+    background: 
+    linear-gradient(
+        $color-blue-grey, 
+        $color-blue-grey),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 14rem center;
+    height: 100vh;
+    padding: 14rem 0;
+    text-align: center;
+
+    &__heading{
+        @include absCenter;
+        margin-top: 12.8rem;
+        font-size: 5.7rem;
+        line-height: 8.7rem;
+        letter-spacing: .1rem;
+        color: $color-white;
+        font-family: 'MuseoSans-100',Arial, Helvetica, sans-serif;
+        font-weight: 100;
+    }
+
+    &__btn{
+        @include absCenter;
+        margin-top: 27rem;
+    }
+}
