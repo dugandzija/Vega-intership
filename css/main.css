@@ -103,26 +103,28 @@ body {
 body {
   font-family: "MuseoSans-100", Arial, Helvetica, sans-serif; }
 
-.btn {
+.btn, .btn:link, .btn:visited {
   font-size: 2rem;
   display: inline-block;
   padding: 1.3rem 2.6rem;
   background: #004ffa;
+  text-decoration: none;
   border-radius: 3rem;
   color: #fff;
   text-shadow: 0 1px 1px #000; }
-  .btn:hover {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8); }
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8); }
 
 .row {
-  max-width: 128rem;
+  max-width: 124rem;
   margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
     .row {
       max-width: 50rem;
       padding: 0 2rem; } }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 5rem !important; } }
@@ -268,4 +270,30 @@ body {
   font-size: 10rem; }
 
 .news {
-  margin-top: 10rem; }
+  margin-top: 11rem;
+  text-align: center;
+  margin-bottom: 7rem; }
+  .news__heading {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 100; }
+  .news__thumbnail {
+    width: 100%;
+    height: 23rem; }
+  .news__sub-heading {
+    font-size: 1.8rem;
+    text-align: left;
+    color: #686868;
+    margin: 1.5rem 0; }
+  .news__p {
+    padding-top: 1rem;
+    font-size: 3em;
+    text-align: left;
+    line-height: 5rem;
+    font-family: "MuseoSans-300", Arial, Helvetica, sans-serif; }
+  .news__btn, .news__btn:link, .news__btn:visited {
+    background: #fff;
+    border: 2px solid #004ffa;
+    margin: 2.5rem;
+    color: #004ffa;
+    font-size: 1.7rem; }
