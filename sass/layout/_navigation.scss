@@ -23,6 +23,15 @@
         float: right;
         list-style: none;
         margin-right:.3rem; 
+        a{
+            text-decoration: none;
+            &,
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: $color-black;
+            } 
+        }
     }
    
     &__item{
@@ -32,6 +41,7 @@
         padding-bottom: 4.5rem;
         padding-top: 1rem;
         word-spacing: 2px;
+        text-shadow: 0 2px 5px $color-black;
 
         &:not(:last-child){
             margin-right: 4.45rem;

@@ -1,3 +1,4 @@
+// ########## HERO SECTION ##########
 .hero{
     background: 
     linear-gradient(
@@ -7,23 +8,88 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top 14rem center;
-    height: 100vh;
+    height: 91.5vh;
     padding: 14rem 0;
     text-align: center;
-
+    position: relative;
     &__heading{
         @include absCenter;
-        margin-top: 12.8rem;
+        margin-top: 1.8rem;
         font-size: 5.7rem;
         line-height: 8.7rem;
-        letter-spacing: .1rem;
+        letter-spacing: .2rem;
         color: $color-white;
         font-family: 'MuseoSans-100',Arial, Helvetica, sans-serif;
         font-weight: 100;
+        text-shadow: 0 1px $color-black;
     }
-
     &__btn{
         @include absCenter;
-        margin-top: 27rem;
+        margin-top: 16rem;
     }
+}
+
+// ########## ABOUT SECTION ##########
+.about{
+    margin-top: 10rem;
+    margin-left: 4.5rem;
+    margin-bottom: 8rem;
+    &__heading-primary{
+        font-size: 4rem;
+        margin-bottom: 3.5rem;
+        letter-spacing: 1px;
+    }
+    &__heading-secondary{
+        font-size: 2.6rem;
+        letter-spacing: 1px;
+        margin: 4rem 0;
+    }
+    &__paragraph{
+        font-size: 2rem;
+        line-height: 3.2rem;
+
+        &--sub{
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            padding-bottom: 2rem;
+        }
+    }
+    &__link{
+        &:link,
+        &:visited{ 
+            text-decoration: none;
+            color: $color-blue;
+        }
+        &:hover{
+            text-shadow: 0 1px 3px $color-black;
+        }
+    }
+    &__list{
+        max-width: 63%;
+        margin: 2rem;
+        margin-top: 2.8rem;
+        list-style-type: circle;
+        font-size: 2rem;
+        text-align: justify;
+    }
+    &__item{
+        &:not(:first-child) {padding-top: 1rem;}
+        line-height: 3.2rem;
+    }
+}
+
+// ########## IMAGE CAROUSEL ##########
+.img-carousel{
+    height: 83.5rem;
+    background: green;
+    position: relative;
+}
+.test{
+    @include absCenter;
+    font-size: 10rem;
+}
+
+// ########## NEWS SECTION ##########
+.news{
+    margin-top: 10rem;
 }

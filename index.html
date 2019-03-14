@@ -11,23 +11,76 @@
     <title>Zadatak za praksu</title>
 </head>
 <body>
+
+    <!-- ########## NAVIGATION ########## -->
     <nav class="nav">
         <div class="nav__box">
             <img class="nav__logo" src="img/logo.png" alt="Health Care International - logo" />
             <ul class="nav__list">
-                <li class="nav__item">What we do</li>
-                <li class="nav__item">About</li>
-                <li class="nav__item">Pricing</li>
-                <li class="nav__item">Contact</li>
+                <li class="nav__item"><a href="#">What we do</a></li>
+                <li class="nav__item"><a href="#">About</a></li>
+                <li class="nav__item"><a href="#">Pricing</a></li>
+                <li class="nav__item"><a href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
-
+    
+    <!-- ########## HERO SECTION ########## -->
     <header class="hero">
         <h1 class="hero__heading">Lorem ipsum dolor sit amet, consectetur adipscing elit</h1>
-        <div class="btn hero__btn">
-            Sign up now
-        </div>
+        <a href="#"> 
+            <div class="btn hero__btn">
+                Sign up now
+            </div>
+        </a>
     </header>
+    
+    <main>
+        <!-- ########## ABOUT SECTION ########## -->
+        <section class="about">
+            <div class="row">
+                <div class="col-1-of-1">
+                    <h2 class="about__heading-primary">I am page heading</h2>
+                    <p class="about__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam reprehenderit tenetur debitis harum temporibus cum, dolore quam iusto aliquam magnam dolores iure sit hic consequatur laudantium dolorum nulla explicabo? Lorem, ipsum <a class="about__link" href="#">dolor sit amet consectetur</a> adipisicing elit. Porro fugit, maxime quas debitis esse reprehenderit sapiente asperiores officia nihil vero ducimus nam inventore beatae tempora fuga distinctio ea error totam.
+                    </p>
+                    <ul class="about__list">
+                        <li class="about__item">Lorem ipsum, dolor ab eaque minus quos!</li>
+                        <li class="about__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque similique sit praesentium. Incidunt laboriosam molestiae consequatur modi tempore sit consectetur, mollitia labore aliquid, harum aspernatur maxime quam aut quis.</li>
+                        <li class="about__item">Lorem ipsum, dolor sit amet consectetur</li>
+                    </ul>
+                    <h3 class="about__heading-secondary">I am page subheading</h3>
+                    <p class="about__paragraph--sub">Lorem ipsum, dolor sit Lorem, ipsum dolor sit amet consectetur adipisicing or sit Lorem, ipsum dolor sit ipsum dolor sit amet consectetur adipisicing elit. A, ex similique voluptatibus voluptate quae non voluptas soluta! Molestias cum distinctio voluptatum quo quos, atque veniam assumenda officiis pariatur, eveniet reiciendis? amet consectetur adipisicing elit. Eaque fugiat asperiores, aliquam earum perferendis dolor? Quae molestiae repellendus sequi similique blanditiis necessitatibus iste. Suscipit porro commodi voluptatem reiciendis, ratione iusto!</p>
+                    <p class="about__paragraph--sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi fuga eius, aliquam reprehenderit illo minima officia ullam pariatur vero, ab aspernatur amet impedit? Possimus alias voluptates earum iste vel. Fuga?</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ########## IMAGE SLIDER ########## -->
+        <section class="img-carousel">
+            <div class="test"> IMAGE SLIDER</div>
+        </section>
+        
+        <!-- ########## NEWS SECTION ########## -->
+        <section class="news">
+            <div class="row">
+                <div class="col-1-of-1">
+                    <h2 class="news__heading">More news</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <img class="news__thumbnail" src="img/news.jpg" alt="">
+                </div>
+                <div class="col-1-of-3">
+                    <img class="news__thumbnail" src="img/news2.jpg" alt="">
+                </div>
+                <div class="col-1-of-3">
+                    <img class="news__thumbnail" src="img/news3.jpg" alt="">
+                </div>
+            </div>
+            
+        </section>
+    </main>
 </body>
 </html>
