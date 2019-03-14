@@ -13,6 +13,32 @@
         color: $color-grey;
     }
     &--blue{
+        &,
+        &:link,
+        &:visited{
         color: $color-blue;
+        text-decoration: none;
+        }
+        &:hover{
+            font-family: 'MuseoSans-300',Arial, Helvetica, sans-serif;
+        }
+    }
+    &__social{
+        float: right;
+        font-family: "icons";
+        
+        font-size: 1.7rem;
+    }
+    &__links{
+        &,
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: $color-grey;
+        }
+        &:hover{
+            color:$color-blue;
+            text-shadow: 0 1px 1px $color-grey-dark;
+        }
     }
 }
