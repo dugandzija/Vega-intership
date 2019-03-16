@@ -9,7 +9,6 @@ $breakpoints:
 - phone
 - tab-port
 - tab-land
-- big-desktop
 
 ORDER: Base + typography > general layout + grid > page layout > components
 
@@ -24,9 +23,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 * {
   margin: 0;
@@ -284,15 +280,30 @@ button {
 
 .nav {
   background-color: #fff;
-  width: 100%;
+  display: block;
+  width: 80%;
   height: 8rem;
-  position: relative; }
+  position: relative;
+  margin: 4rem auto; }
+  @media only screen and (max-width: 75em) {
+    .nav {
+      width: 90%;
+      margin: 2rem auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      width: 100%;
+      margin: 1rem auto; } }
   .nav__header {
-    display: inline; }
+    display: inline-block;
+    padding-bottom: 4rem; }
   .nav__title {
     display: inline-block;
-    font-size: 22px;
-    padding: 10px 10px 10px 10px; }
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    padding-left: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__title {
+        transform: scale(0.8); } }
   .nav__btn {
     display: none; }
     @media only screen and (max-width: 75em) {
@@ -304,12 +315,13 @@ button {
         .nav__btn label {
           display: inline-block;
           transition: all .2s ease-in;
-          width: 50px;
-          height: 50px;
-          padding: 13px;
+          width: 5rem;
+          height: 5rem;
+          padding: 3rem;
           border: 0.5rem solid #004ffa;
           border-radius: 10rem;
-          padding-top: 2rem; }
+          padding-top: 2rem;
+          transform: scale(0.6); }
           .nav__btn label:hover {
             box-shadow: 0 2px 8px #000; }
           .nav__btn label span {
@@ -321,30 +333,34 @@ button {
     float: right;
     font-size: 18px;
     color: #000;
-    font-size: 1.9rem; }
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    padding-right: 6rem; }
     @media only screen and (max-width: 75em) {
       .nav__links {
         position: absolute;
-        display: block;
+        display: inline-block;
         width: 100%;
-        background-color: #383838;
-        height: 0px;
+        background-color: #eee;
+        height: 1000px;
         transition: all .5s ease-in;
         overflow-y: hidden;
-        top: 50px;
-        right: 0; } }
+        top: 0;
+        right: 13rem; } }
     .nav__links a {
       display: inline-block;
       padding: 13px 10px 13px 10px;
       text-decoration: none;
       text-shadow: 0 1px 5px #000;
-      color: #000; }
+      color: #000;
+      padding-bottom: 5rem; }
       .nav__links a:hover {
         border-bottom: 0.5rem solid #004ffa; }
       @media only screen and (max-width: 75em) {
         .nav__links a {
-          display: block;
-          width: 100%; } }
+          display: inline-block;
+          width: 100%;
+          padding-bottom: 1rem; } }
 
 #nav-check {
   display: none; }
@@ -353,8 +369,10 @@ button {
       height: 0px; } }
   @media only screen and (max-width: 75em) {
     #nav-check:checked + .nav__links {
-      height: 50rem;
-      overflow-y: auto; } }
+      width: 20rem;
+      height: 20rem;
+      overflow-y: visible;
+      z-index: 999; } }
 
 .footer {
   border-top: 1px solid #686868;
@@ -390,6 +408,7 @@ button {
   background-repeat: no-repeat;
   background-position: top  center;
   height: 100vh;
+  margin-top: 4rem;
   padding: 0;
   text-align: center;
   position: relative; }
@@ -398,8 +417,8 @@ button {
       background: linear-gradient(rgba(11, 17, 27, 0.4), rgba(11, 17, 27, 0.4)), url(../img/hero-mobile.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: top 14rem center;
-      height: 60vh; } }
+      background-position: top  center;
+      height: 70vh; } }
   @media only screen and (max-width: 37.5em) {
     .hero {
       height: 50vh; } }
