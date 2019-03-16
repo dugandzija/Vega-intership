@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ########## NORMALIZE.CSS ########## -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -13,9 +13,10 @@
 <body>
     
     <!-- ########## NAVIGATION ########## -->
-    <nav class="nav">
+    <!-- <nav role="navigation" class="nav">
         <div class="nav__box">
-            <img class="nav__logo" src="img/logo.png" alt="Health Care International - logo" />
+            <a href="#"><img class="nav__logo" src="img/logo.png" alt="Health Care International - logo" /></a> 
+            
             <ul class="nav__list">
                 <li class="nav__item"><a href="#">What we do</a></li>
                 <li class="nav__item"><a href="#">About</a></li>
@@ -23,14 +24,38 @@
                 <li class="nav__item"><a href="#">Contact</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     
+    <nav class="nav">
+        <div class="nav__header">
+            <div class="nav__title">
+                    <img src="img/logo.png" alt="logo" />
+            </div>
+        </div>
+        <div class="nav__btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav__links">
+            <a href="#">What we do</a>
+            <a href="#">About</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
     <!-- ########## HERO SECTION ########## -->
     <header class="hero">
-        <h1 class="hero__heading">Lorem ipsum dolor sit amet, consectetur adipscing elit</h1>
-        <a href="#" class="btn hero__btn"> 
-            Sign up now >
-        </a>
+        <div class="hero__box">
+            <h1 class="hero__heading">Lorem ipsum dolor sit amet, consectetur adipscing elit</h1>
+            <a href="#" class="btn hero__btn"> 
+                Sign up now &#10095;
+            </a>
+        </div>
+        
     </header>
     
     <main>
@@ -56,7 +81,20 @@
         
         <!-- ########## IMAGE SLIDER ########## -->
         <section class="img-carousel">
-            <div class="test"> IMAGE SLIDER</div>
+            <div class="img-carousel__container">
+                <div class="img-carousel__box">
+                    <div id="box">
+                        <img src="img/slide1.jpg" alt="slide-picture" />
+                        <h3 class="img-carousel__title">Itaque earum rerum hic tenetur</h3>
+                        <p class="img-carousel__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium bolupatum deleniti atque corrupti</p>
+                    </div>
+                    
+                </div>
+                
+                <button class="img-carousel__prev" onclick="prewImage()">&#10094;</button>
+                <button class="img-carousel__next" onclick="nextImage()">&#10095;</button>
+                <a href="#" class="btn img-carousel__btn">Contact us &#10095;</a>
+            </div>
         </section>
         
         <!-- ########## NEWS SECTION ########## -->
@@ -68,28 +106,29 @@
             </div>
             <div class="row">
                 <div class="col-1-of-3">
-                    <img class="news__thumbnail" src="img/news.jpg" alt="">
+                    <img class="news__thumbnail" src="img/news.jpg" alt="news-thumbnail-1" />
                     <h4 class="news__sub-heading">March</h4>
                     <p class="news__p">Sed ut persipiciatis unde omnis iste natus error sit voluptratem</p>
                 </div>
                 <div class="col-1-of-3">
-                    <img class="news__thumbnail" src="img/news2.jpg" alt="">
+                    <img class="news__thumbnail" src="img/news2.jpg" alt="news-thumbnail-2" />
                     <h4 class="news__sub-heading">Jun</h4>
                     <p class="news__p">Nemo enim ipsam voluptatem quia voluptas sit</p>
                 </div>
                 <div class="col-1-of-3">
-                    <img class="news__thumbnail" src="img/news3.jpg" alt="">
+                    <img class="news__thumbnail" src="img/news3.jpg" alt="news-thumbnail-3" />
                     <h4 class="news__sub-heading">September</h4>
                     <p class="news__p">Neque porro quisquam est qui dolorem ipsum quia dolor</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1-of-1">
-                    <a href="#" class="btn news__btn">See all media ></a>
+                    <a href="#" class="btn news__btn">See all media &#10095;</a>
                 </div>
             </div>
         </section>
     </main>
+    <!-- ########## FOOTER ########## -->
     <footer class="footer">
         <div class="footer__box">
             <span class="footer--grey">&copy; Copyright</span>
@@ -102,7 +141,8 @@
                 <a href="#" class="footer__links">c</a>
             </div>
         </div>
-        
     </footer>
+    <!-- ########## SLIDER JS ########## -->
+    <script src="js/slider.js"></script>
 </body>
 </html>

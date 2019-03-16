@@ -1,0 +1,88 @@
+.img-carousel{
+    width: 100%;
+    color: $color-white;
+    transition: all .3s ease;
+    &__container{
+        text-align: center;
+        position: relative;
+    }
+    &__title{
+        @include absCenter;
+        top: 42%;
+        font-size: 6rem;
+        font-weight: 100;
+        padding-bottom: 5rem;
+        width: 50%;
+        @include respond(tab-land){
+            font-size: 4rem;
+            padding-bottom: 3rem;
+        }
+        @include respond(tab-port){
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+        @include respond(phone){ width: 70%; }
+    }
+    &__description{
+        @include absCenter;
+        font-size: 2rem;
+        margin-top: 3rem;
+        line-height: 3rem;
+        padding: 4rem;
+        @include respond(tab-land){
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-top: 2rem;
+            width: 70%;
+        }
+        @include respond(tab-port){
+            width: 65%;
+        }
+        @include respond(phone){ display: none; }
+    }
+    &__prev{
+        left: 23rem;
+        @include respond(tab-land){
+            left: 4rem;
+        }
+    }
+    &__next{
+        right: 23rem;
+        @include respond(tab-land){
+            right: 4rem;
+        }
+    }
+    &__btn{
+        @include absCenter;
+        top:70%;
+        font-weight: 700;
+        font-size: 1.6rem !important;
+        @include respond(phone){
+            display: none !important; 
+        }
+    }
+}
+
+#box{
+    img{
+        width: 100%;
+    }
+}
+button{
+    padding: 2rem 2.2rem;
+    background: transparent;
+    font-size: 30px;
+    color: white;
+    top:45%;
+    position: absolute;
+    z-index: 12;
+    border-radius: 10rem;
+    font-size: 2rem;
+    border: .6rem solid $color-white;
+    font-weight: 900;
+    @include respond(tab-phone){
+        font-size: 1.5rem;
+        border: .2rem solid $color-white;
+        padding: 1.5rem 1.7rem;
+    }
+}
